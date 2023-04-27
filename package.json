@@ -1,0 +1,25 @@
+{
+  "name": "in-memory-filesystem",
+  "version": "1.0.0",
+  "description": "in-memory filesystem",
+  "main": "index.ts",
+  "scripts": {
+    "test": "NODE_PATH=./dist node --no-compilation-cache ./node_modules/.bin/jest",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "watch": "rm -rf dist && tsc --watch",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mskeving/filesystem.git"
+  },
+  "author": "Melissa Skevington",
+  "homepage": "https://github.com/mskeving/filesystem#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
